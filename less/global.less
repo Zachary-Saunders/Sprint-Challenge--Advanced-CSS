@@ -12,9 +12,13 @@ html, body {
   color: @main-font-color;
 }
 
-h1, h2, h3, h4, h5 {
+h1, h2, h3, h4, h5, a {
   font-family: 'Russo One', sans-serif;
   color: @header-font-color;
+}
+
+h1 {
+  font-size: 4.0rem;
 }
 
 h2 {
@@ -30,9 +34,17 @@ p {
   line-height: 1.4;
 }
 
+a {
+  font-size: 1.8rem;
+}
+
 .container {
   max-width: 800px;
   width: 100%;
-  margin: 0 auto;  
+  margin: 0 auto;
+  
+  @phone {
+    max-width: 500px;
+  }
 }
 
